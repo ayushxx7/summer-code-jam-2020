@@ -183,47 +183,40 @@
 
         <hr style="display: block; margin-before: 0.5em; margin-after: 0.5em; margin-start: auto; margin-end: auto; overflow: hidden; border-style: inset; border-width: 1px;">
         <div class="window-body" style="background-color: #e5e9e7;margin:auto 10px">
-            <section class="profile">
-              <div>
-                <img src="images/example_img.jpg" alt="">
-                <div class="profile-info">
-                  <ul>
-                    <li><b>Born: </b></li>
-                    <li><b>Joined: </b></li>
-                    <li><b>Hobby: </b></li>
-                    <li><b>Country: </b></li>
-                  </ul>
+            <fieldset class="profile">
+              <legend>{{}}'s Profile</legend>
+              <section class="above">
+                <div class="profile-img">
+                  <img src="images/example_img.jpg" alt="">
                 </div>
-              </div>
-              <article>
+                <div class="tweets">
+                  <span class="profile-box-title">{{}}'s Tweets</span>
+                  <div class="search-container">
+                    <form action="">
+                      <input type="text" placeholder="Search tweets.." name="search">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                </div>
                 <div class="about">
-                  <h2>About --name--</h2>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptates praesentium consequuntur illo labore iure accusantium
-                  quam id recusandae deserunt vel! Vero sapiente error fuga dolorem
-                  ipsum voluptatum officia fugiat reprehenderit iste. Enim 
-                  laborum quam nostrum architecto et assumenda eligendi ullam
-                  hic nam veritatis quod eaque repudiandae nobis tempora
-                  tenetur similique magnam corrupti eius, consequatur molestiae,
-                  exercitationem voluptatum adipisci! Maiores vitae temporibus
-                  non natus a nisi quis voluptas corrupti. Nostrum error fugit 
-                  adipisci modi! Mollitia soluta atque veniam adipisci quasi exercitationem
-                  optio corporis iste porro odit doloribus provident, repellat consequatur.
-                  Esse porro, ipsa harum nulla quibusdam dignissimos excepturi accusantium eius aperiam?
-              </div>
-              <aside>
-                <fieldset class="posts">
-                  <legend>Number Of Posts</legend>
-                </fieldset>
-                <fieldset class="all-time-likes">
-                  <legend>All Time Likes</legend>
-                </fieldset>
-                <fieldset class="time-spend">
-                  <legend>RetroNet Activity</legend>
-                </fieldset>
+                  <span class="profile-box-title">  About</span>
+                  <div class="bio">
+                    <p>
+                      <b>Bio:</b>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                      Id voluptates reiciendis laboriosam eveniet inventore itaque nihil, 
+                      a nostrum vel sit quisquam.
+                    </p>
+                  </div>
+                  <div class="general-info">
+
+                  </div>
+                </div>
+              </section>
+              <section class="below"></section>
               </aside>
-              </article>
-            </section>
+              
+            </fieldset>
         </div>
     <div class="container">
       <div id="left" style="border-style: inset;"><img src="e.png" align="left"
@@ -232,7 +225,7 @@
       <div id="middle2" style="border-style: inset;"></div>
       <div id="middle3" style="border-style: inset;"></div>
       <div id="right" style="border-style: inset;"><img src="earth.png" align="left" style="width:15px; height:16px;display: block;float: left"> Internet</div>
-      <div id="txt" align="center" style="border-style: inset;width:10%;min-width:48px;vertical-align: middle;height:18px;"></div>
+      <div id="txt" align="center" style="border-style: inset;width:14.5%;min-width:48px;vertical-align: middle;height:18px;"></div>
 
     </div>
   </div>
