@@ -292,6 +292,33 @@ font-size: 0;
   height: 500px;
 }
 
+/*-----------------------Tweet view styling-----------------------*/
+
+.tweet-view{
+  padding: 10px;
+}
+
+.tweet-view div{
+  font-size: large;
+}
+
+.actions{
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-gap: 8px;
+  margin-top: 20px;
+}
+
+.actions button{
+  height: 50px;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.actions button:hover{
+  opacity: .6;
+}
+
 #txt,
 #left,
 #middle1,
