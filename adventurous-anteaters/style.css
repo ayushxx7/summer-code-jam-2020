@@ -279,6 +279,27 @@ font-size: 0;
   height: 500px;
 }
 
+.home{
+  padding: 10px;
+  max-height: 75vh;
+  overflow-y: scroll;
+}
+
+.home .search-container button{
+  width: 19.5%;
+}
+
+.all_tweets .tweet{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-gap: 5px;
+  background: none;
+}
+
+.tweet-title, .tweet-date-posted{
+  display: block;
+}
+
 #txt,
 #left,
 #middle1,
