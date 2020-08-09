@@ -5,7 +5,7 @@ from django.utils import timezone
 # we use save because auto_now is evil (https://stackoverflow.com/a/1737078)
 class BaseModel(models.Model):
     created_at = models.DateTimeField(editable=False)
-    updated_at = models.DateTimeField()
+    updated_at = models.DateTimeField(editable=False)
 
     class Meta:
         abstract = True
