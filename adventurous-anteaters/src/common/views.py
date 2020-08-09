@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from django.http import Http404
+from rest_framework import permissions, viewsets
+from rest_framework.pagination import LimitOffsetPagination
 
-# Create your views here.
+from .models import User
+from .serializers import UserSerializer
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+    pagination_class = LimitOffsetPagination
+    permission_classes = [permissions.AllowAny]

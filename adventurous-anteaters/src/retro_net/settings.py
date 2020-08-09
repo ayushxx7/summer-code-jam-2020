@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'drf_yasg',
 
     'common.apps.CommonConfig',
+    'user_messages.apps.UserMessagesConfig',
 ]
 
 MIDDLEWARE = [
@@ -79,6 +80,8 @@ REST_FRAMEWORK = {
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
     ),
 }
+
+AUTH_USER_MODEL = 'common.User'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
